@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="cuerpo">
+    <div class="container vh-100 d-flex align-items-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-8 bg-white px-0 vh-100 overflow-auto">
+                <nav class="navbar navbar-expand-lg bg-light navegación">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="https://images.vexels.com/media/users/3/137201/isolated/preview/83b5f2a86fa0ec9f938664da94a9bc55-instagram-silhouette-stroke-logo.png" alt="Logo"/>
+                        </a>
+                        <form class="d-flex" role="create">
+                            <button
+                                class="btn btn-success botón-crear"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal1"
+                                aria-expanded="false">
+                                Create a new post
+                            </button>
+                            <div class="modal" id="modal1" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Create a new post</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label class="form-label">Caption:</label>
+                                                <textarea class="form-control" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer justify-content-end">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Publish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="desplegable">
+                                <button
+                                    class="btn btn-secondary dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-gear engranaje"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item salir" href="#">Log out</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+                
+                <input type="radio" name="vista" id="vistatabla" class="d-none" checked>
+                <input type="radio" name="vista" id="vistalista" class="d-none">
+                
+                
+                <label class="ícono1" for="vistatabla">
+                    <i class="fa-solid fa-table-cells cuadrícula"></i>
+                </label>
+                
+                <label class="btn btn-secondary ícono2" for="vistalista"></label>
+                
+                
+                <div class="vertabla">
+                    <div class="row justify-content-center">
+                        <div class="col-3 border border-1 border-dark foto1 p-0">
+                            <img class="img1" src="https://www.patasencasa.com/sites/default/files/styles/article_detail_1200/public/2024-06/6%20datos%20curiosos%20sobre%20el%20Russell%20Terrier.JPG.webp?itok=RpDWalHt" alt="Perrito"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto2 p-0">
+                            <img class="img2" src="https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Einrichtungen/Zentrale_Einrichtungen/Hochschulsport/Bilder/Home/Bewegungspause_im_H%C3%B6rsaal_Kopie.jpg" alt="Estudiantes"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto3 p-0">
+                            <img class="img3" src="https://elviajista.com/wp-content/uploads/2019/04/sicilia-1-800x506.jpg" alt="Sicilia"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 border border-1 border-dark foto4 p-0">
+                            <img class="img4" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Candice_Swanepoel_for_Max_Factor_02.jpg" alt="Mujer"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto5 p-0">
+                            <img class="img5" src="https://www.turismosevilla.org/sites/default/files/styles/grande_800x600_/public/2023-07/plaza-espaa-sevilla-espaa_52618454587_o_0.jpg?h=561ac823&itok=7wB4fXcA" alt="Plaza"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto6 p-0">
+                            <img class="img6" src="https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Fgobulldogs.com%2Fimages%2F2016%2F8%2F13%2FAaron_Judge_NYY.jpg&width=1600&type=jpeg" alt="Jugador"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 border border-1 border-dark foto7 p-0">
+                            <img class="img7" src="https://mf.b37mrtl.ru/rbthmedia/images/2023.02/original/63e23e89517e2f277422ce95.jpg" alt="Family"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto8 p-0">
+                            <img class="img8" src="https://media.wired.com/photos/5ca648a330f00e47fd82ae77/master/pass/Culture_Matrix_Code_corridor.jpg" alt="Matrix"/>
+                        </div>
+                        <div class="col-3 border border-1 border-dark foto9 p-0">
+                            <img class="img9" src="https://kula-tactical.com/wp-content/uploads/2020/02/russian-Spetsnaz-main-1.png" alt="Spetsnaz"/>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="verlista">
+                    <div class="row justify-content-center">
+                        <div class="col-8 border border-1 border-dark foto10 p-0">
+                            <h3>Mi raza de perro favorita</h3>
+                            <img class="img10" src="https://image.petmd.com/files/styles/978x550/public/2022-10/parson-jack-russell-terrier.jpg" alt="Perrito 2"/>
+                            <p><strong>204 Me gusta</strong></p>
+                            <p>El Jack Russell Terrier es un perro activo y lleno de energía.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-8 border border-1 border-dark foto11 p-0">
+                            <h3>La belleza de Sicilia</h3>
+                            <img class="img11" src="https://turitalia.es/wp-content/uploads/2022/11/sicilia-taormina-etna-2.jpg" alt="Monte Etna"/>
+                            <p><strong>26985 Me gusta</strong></p>
+                            <p>El Monte Etna es el volcán más activo de Europa con erupciones frecuentes todos los años.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-8 border border-1 border-dark foto12 p-0">
+                            <h3>El mejor pelotero del mundo</h3>
+                            <img class="img12" src="https://nypost.com/wp-content/uploads/sites/2/2024/10/JudgeFinal22.jpg?quality=75&strip=all" alt="Pelotero"/>
+                            <p><strong>320 Me gusta</strong></p>
+                            <p>Aaron Judge fue el primer jugador en dos décadas en sobrepasar la marca de 60 jonrones en una temporada.</p>
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
