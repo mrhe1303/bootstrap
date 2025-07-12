@@ -1,0 +1,193 @@
+.cuerpo {
+    background-color: black;
+}
+.logo {
+    width: 25%;
+    height: 90%;
+}
+.navegación{
+    height: 80px;
+}
+.engranaje {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.botón-crear {
+    margin: 5px;
+}
+.desplegable {
+    position: relative;
+    top: 5px;
+}
+.ícono1 {
+    background: none;
+    border: none;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 375px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.cuadrícula {
+    font-size: 30px;
+    color: grey;
+    padding: 10px;
+    margin: 0;
+    top: 0;
+}
+.ícono2 {
+    width: 27px;
+    height: 27px;
+    position: relative;
+    left: 425px;
+    top: 2px;
+    cursor: pointer;
+}
+.cuadrícula:hover {
+    color: blue;
+}
+,.cuadrícula:active {
+    color: blue;
+}
+.ícono2:hover {
+    background-color: blue !important;
+}
+.ícono2:active {
+    background-color: blue !important;
+}
+.foto1 {
+    height: 250px;
+    margin: 5px;
+    width: 250px !important;
+    position: relative;
+    top: 20px;
+}
+.foto2 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto3 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto4 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto5 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto6 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto7 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto8 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto9 {
+    height: 250px;
+    width: 250px !important;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+.foto10 {
+    height: auto;
+    width: 400px !important;
+    margin: 15px auto;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+}
+.foto11 {
+    height: auto;
+    width: 400px !important;
+    margin: 15px auto;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+}
+.foto12 {
+    height: auto;
+    width: 400px !important;
+    margin: 15px auto;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+}
+[class^="img"] {
+    object-fit: cover;
+    height: 100%;
+    width: 100%
+}
+.salir {
+    color: red !important;
+}
+.verlista {
+    display: none;
+}
+#vistalista:checked ~ .verlista {
+    display: block;
+}
+#vistalista:checked ~ .vertabla {
+    display: none;
+}
+#vistatabla:checked ~ .vertabla {
+    display: block;
+}
+#vistatabla:checked ~ .verlista {
+    display: none;
+}
+.foto10 img,
+.foto11 img,
+.foto12 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.foto10 h3,
+.foto11 h3,
+.foto12 h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.foto10 p,
+.foto11 p,
+.foto12 p {
+    margin-bottom: 8px;
+}
